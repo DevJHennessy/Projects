@@ -34,13 +34,13 @@ namespace CS_28_Libraries
                 return;
             }
 
-            bool validAmswer = false;
+            bool validAnswer = false;
             int bank = 0;
-            while (!validAmswer)
+            while (!validAnswer)
             {
                 Console.WriteLine("And how much money did you bring today?");
-                validAmswer = int.TryParse(Console.ReadLine(), out bank);
-                if (!validAmswer) 
+                validAnswer = int.TryParse(Console.ReadLine(), out bank);
+                if (!validAnswer) 
                 {
                     Console.WriteLine("Please enter whole digits only.");
                 }
