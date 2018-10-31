@@ -1,27 +1,26 @@
 ﻿using NUnit.Framework;
-using NewInsertionSort;
+using Palindrome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewInsertionSort.Tests
+namespace Palindrome.Tests
 {
     [TestFixture()]
-    public class InsertionSortTests
+    public class PalindromeTests
     {
         [Test()]
-        public void InsertionSortAlgTest()
+        public void IsPalindromeTest()
         {
             //Arrange
-            var sut = new InsertionSort();
-            int[] data = { 5, 4, 3, 2, 1 };
-            int[] expected = { 1, 2, 3, 4, 5 };
+            var sut = new Palindrome();
+            var myString = "Madam";
+            var expected = true;
 
             //Act
-            var result = sut.InsertionSortAlg(data);
-    
+            var result = sut.IsPalindrome(myString);
 
             //Assert
             Assert.That(result, Is.EqualTo(expected));

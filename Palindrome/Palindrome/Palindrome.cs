@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewPalindrome
+namespace Palindrome
 {
     public class Palindrome
     {
@@ -48,7 +48,6 @@ namespace NewPalindrome
 
                 min++;
                 max--;
-
             }
         }
     }
